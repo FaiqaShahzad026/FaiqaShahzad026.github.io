@@ -3,27 +3,82 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Faiqa Shahzad - Portfolio</title>
+    <title>Faiqa Shahzad | Software Engineering & Cloud Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <div class="container">
-        <header>
-            <h1>Welcome to My GitHub Pages</h1>
-            <p class="subtitle">Cloud Computing & Software Engineering Student</p>
-        </header>
+    <div class="resume-wrapper">
+        <!-- Sidebar / Profile Summary -->
+        <aside class="sidebar">
+            <div class="profile-card">
+                <img src="images.png" alt="Faiqa Shahzad" class="avatar">
+                <h1>Faiqa Shahzad</h1>
+                <p class="role">Software Engineering & Cloud Computing Student</p>
+            </div>
 
-        <main>
-            <section class="card">
-                <h2>About Me</h2>
-                <p>Hello! I am Faiqa Shahzad, studying software engineering, database systems, and cloud infrastructure.</p>
-                <img src="images.png" alt="Profile Image" class="profile-img">
+            <div class="sidebar-section">
+                <h3><i class="fas fa-envelope"></i> Contact & Links</h3>
+                <ul class="contact-list">
+                    <li><i class="fab fa-github"></i> <a href="https://github.com/faiqashahzad026" target="_blank">faiqashahzad026</a></li>
+                    <li><i class="fas fa-globe"></i> <a href="about.html">About Page</a></li>
+                </ul>
+            </div>
+
+            <div class="sidebar-section">
+                <h3><i class="fas fa-code"></i> Technical Skills</h3>
+                <ul class="skills-tags">
+                    <li>Cloud Infrastructure</li>
+                    <li>Software Design & UML</li>
+                    <li>SQL & Database Systems</li>
+                    <li>C# & Windows Forms</li>
+                    <li>Cisco Packet Tracer</li>
+                    <li>Git / GitHub / Gitea</li>
+                </ul>
+            </div>
+        </aside>
+
+        <!-- Main Resume Body -->
+        <main class="main-content">
+            <section class="content-block">
+                <h2><i class="fas fa-user-circle"></i> About Me</h2>
+                <p>
+                    Passionate Software Engineering student focusing on cloud computing, system architecture, database design, and computer networking. Experienced in building full-stack desktop applications, modeling complex relational systems, and managing version control pipelines.
+                </p>
             </section>
-        </main>
 
-        <footer>
-            <p>&copy; 2026 Faiqa Shahzad. Hosted on GitHub Pages.</p>
-        </footer>
+            <section class="content-block">
+                <h2><i class="fas fa-graduation-cap"></i> Academic Coursework</h2>
+                <div class="item">
+                    <h3>Software Engineering & System Design</h3>
+                    <p>Designed end-to-end UML models including Use Case, Class, Sequence, Component, and Deployment diagrams for enterprise workflows.</p>
+                </div>
+                <div class="item">
+                    <h3>Database Engineering & SQL Server</h3>
+                    <p>Built normalized Relational Database Schemas (ER/EER), writing optimized SQL queries and managing datasets in Microsoft SQL Server.</p>
+                </div>
+                <div class="item">
+                    <h3>Computer Networking & Infrastructure</h3>
+                    <p>Configured multi-router network topologies with OSPF routing, VLANs, and switch port security using Cisco Packet Tracer.</p>
+                </div>
+            </section>
+
+            <section class="content-block">
+                <h2><i class="fas fa-project-diagram"></i> Highlighted Projects</h2>
+                <div class="item">
+                    <h3>Cloud Infrastructure & Version Control Assignment</h3>
+                    <p>Deployed static portfolio via GitHub Pages, managed large asset storage using Git LFS, and configured remote mirror repositories on Gitea.</p>
+                </div>
+                <div class="item">
+                    <h3>Desktop Shopping Management System</h3>
+                    <p>Developed a C# Windows Forms application integrated with relational database queries for inventory and order management.</p>
+                </div>
+            </section>
+
+            <footer>
+                <p>&copy; 2026 Faiqa Shahzad. Hosted on GitHub Pages.</p>
+            </footer>
+        </main>
     </div>
 </body>
 </html>
