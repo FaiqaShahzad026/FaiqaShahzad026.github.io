@@ -3,82 +3,278 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Faiqa Shahzad | Software Engineering & Cloud Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>Faiqa Shahzad - Curriculum Vitae</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            background-color: #f3f4f6;
+            color: #1f2937;
+            line-height: 1.5;
+            padding: 40px 15px;
+        }
+
+        .cv-container {
+            max-width: 850px;
+            margin: 0 auto;
+            background: #ffffff;
+            padding: 50px 60px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+            border-radius: 4px;
+        }
+
+        /* Header / Contact Section */
+        header {
+            text-align: center;
+            border-bottom: 2px solid #2563eb;
+            padding-bottom: 20px;
+            margin-bottom: 25px;
+        }
+
+        header h1 {
+            font-size: 2.2rem;
+            color: #1e3a8a;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+            margin-bottom: 4px;
+        }
+
+        header .subtitle {
+            font-size: 1.05rem;
+            color: #4b5563;
+            font-weight: 500;
+            margin-bottom: 12px;
+        }
+
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            font-size: 0.9rem;
+            color: #374151;
+        }
+
+        .contact-info a {
+            color: #2563eb;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+
+        .contact-info span {
+            color: #9ca3af;
+        }
+
+        /* Section Styling */
+        section {
+            margin-bottom: 22px;
+        }
+
+        h2 {
+            font-size: 1.15rem;
+            color: #1e3a8a;
+            text-transform: uppercase;
+            letter-spacing: 0.8px;
+            border-bottom: 1px solid #e5e7eb;
+            padding-bottom: 4px;
+            margin-bottom: 12px;
+        }
+
+        p {
+            font-size: 0.93rem;
+            color: #374151;
+            text-align: justify;
+        }
+
+        /* Entry Blocks */
+        .entry {
+            margin-bottom: 14px;
+        }
+
+        .entry-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 3px;
+        }
+
+        .entry-title {
+            font-size: 0.98rem;
+            font-weight: 700;
+            color: #111827;
+        }
+
+        .entry-subtitle {
+            font-size: 0.9rem;
+            font-weight: 600;
+            color: #4b5563;
+        }
+
+        .entry-date {
+            font-size: 0.85rem;
+            color: #6b7280;
+            font-style: italic;
+        }
+
+        /* Bullet lists */
+        ul {
+            list-style-type: disc;
+            margin-left: 18px;
+            margin-top: 4px;
+        }
+
+        li {
+            font-size: 0.9rem;
+            color: #374151;
+            margin-bottom: 4px;
+        }
+
+        /* Skills Grid */
+        .skills-grid {
+            display: grid;
+            grid-template-columns: 140px 1fr;
+            row-gap: 8px;
+            font-size: 0.9rem;
+        }
+
+        .skills-category {
+            font-weight: 700;
+            color: #1f2937;
+        }
+
+        .skills-list {
+            color: #4b5563;
+        }
+
+        /* Footer */
+        footer {
+            margin-top: 30px;
+            text-align: center;
+            font-size: 0.8rem;
+            color: #9ca3af;
+            border-top: 1px solid #f3f4f6;
+            padding-top: 15px;
+        }
+
+        /* Print friendly styling */
+        @media print {
+            body { background: #fff; padding: 0; }
+            .cv-container { box-shadow: none; padding: 0; }
+        }
+    </style>
 </head>
 <body>
-    <div class="resume-wrapper">
-        <!-- Sidebar / Profile Summary -->
-        <aside class="sidebar">
-            <div class="profile-card">
-                <img src="images.png" alt="Faiqa Shahzad" class="avatar">
-                <h1>Faiqa Shahzad</h1>
-                <p class="role">Software Engineering & Cloud Computing Student</p>
-            </div>
 
-            <div class="sidebar-section">
-                <h3><i class="fas fa-envelope"></i> Contact & Links</h3>
-                <ul class="contact-list">
-                    <li><i class="fab fa-github"></i> <a href="https://github.com/faiqashahzad026" target="_blank">faiqashahzad026</a></li>
-                    <li><i class="fas fa-globe"></i> <a href="about.html">About Page</a></li>
+    <div class="cv-container">
+        <!-- Header -->
+        <header>
+            <h1>Faiqa Shahzad</h1>
+            <div class="subtitle">Software Engineering & Cloud Computing Student</div>
+            <div class="contact-info">
+                <div><strong>GitHub:</strong> <a href="https://github.com/faiqashahzad026" target="_blank">github.com/faiqashahzad026</a></div>
+                <span>|</span>
+                <div><strong>Location:</strong> Islamabad, Pakistan</div>
+                <span>|</span>
+                <div><a href="about.html">About Page</a></div>
+            </div>
+        </header>
+
+        <!-- Professional Summary -->
+        <section>
+            <h2>Professional Summary</h2>
+            <p>
+                Motivated Software Engineering student with strong academic foundation in cloud computing, relational database management, object-oriented system design, and computer networking. Proven experience in developing desktop applications, creating comprehensive UML architectural models, and deploying automated cloud version control pipelines.
+            </p>
+        </section>
+
+        <!-- Technical Skills -->
+        <section>
+            <h2>Technical Skills</h2>
+            <div class="skills-grid">
+                <div class="skills-category">Languages & Frameworks:</div>
+                <div class="skills-list">C#, SQL, HTML5, CSS3</div>
+
+                <div class="skills-category">Cloud & DevOps:</div>
+                <div class="skills-list">GitHub Pages, Git LFS, Gitea Mirroring, Git Version Control</div>
+
+                <div class="skills-category">Databases & Networking:</div>
+                <div class="skills-list">Microsoft SQL Server, ER/EER Modeling, Cisco Packet Tracer (OSPF, VLANs)</div>
+
+                <div class="skills-category">Software Design:</div>
+                <div class="skills-list">UML Modeling (Use Case, Class, Sequence, Component, Deployment)</div>
+            </div>
+        </section>
+
+        <!-- Academic Projects -->
+        <section>
+            <h2>Key Projects</h2>
+            
+            <div class="entry">
+                <div class="entry-header">
+                    <span class="entry-title">Cloud Infrastructure & Automated Static Portfolio Deployment</span>
+                    <span class="entry-date">2026</span>
+                </div>
+                <ul>
+                    <li>Configured and deployed a live portfolio application via <strong>GitHub Pages</strong> with custom routing and domain structure.</li>
+                    <li>Integrated <strong>Git LFS (Large File Storage)</strong> to handle heavy media binary tracking seamlessly across repositories.</li>
+                    <li>Established remote mirror synchronization between local Git environments, GitHub, and self-hosted Gitea instances.</li>
                 </ul>
             </div>
 
-            <div class="sidebar-section">
-                <h3><i class="fas fa-code"></i> Technical Skills</h3>
-                <ul class="skills-tags">
-                    <li>Cloud Infrastructure</li>
-                    <li>Software Design & UML</li>
-                    <li>SQL & Database Systems</li>
-                    <li>C# & Windows Forms</li>
-                    <li>Cisco Packet Tracer</li>
-                    <li>Git / GitHub / Gitea</li>
+            <div class="entry">
+                <div class="entry-header">
+                    <span class="entry-title">Desktop Shopping System (C# & Windows Forms)</span>
+                    <span class="entry-date">2026</span>
+                </div>
+                <ul>
+                    <li>Designed an object-oriented C# desktop GUI using Windows Forms and DataGridView components.</li>
+                    <li>Integrated Microsoft SQL Server back-end for dynamic product inventory, user transactions, and order management.</li>
                 </ul>
             </div>
-        </aside>
 
-        <!-- Main Resume Body -->
-        <main class="main-content">
-            <section class="content-block">
-                <h2><i class="fas fa-user-circle"></i> About Me</h2>
-                <p>
-                    Passionate Software Engineering student focusing on cloud computing, system architecture, database design, and computer networking. Experienced in building full-stack desktop applications, modeling complex relational systems, and managing version control pipelines.
-                </p>
-            </section>
+            <div class="entry">
+                <div class="entry-header">
+                    <span class="entry-title">Multi-Router Ring Network Topology Setup</span>
+                    <span class="entry-date">2026</span>
+                </div>
+                <ul>
+                    <li>Simulated multi-router network architecture with <strong>OSPF dynamic routing</strong> and switch port security using Cisco Packet Tracer.</li>
+                    <li>Configured VLAN segmentation, IP addressing, and serial inter-router interfaces via Cisco IOS CLI.</li>
+                </ul>
+            </div>
+        </section>
 
-            <section class="content-block">
-                <h2><i class="fas fa-graduation-cap"></i> Academic Coursework</h2>
-                <div class="item">
-                    <h3>Software Engineering & System Design</h3>
-                    <p>Designed end-to-end UML models including Use Case, Class, Sequence, Component, and Deployment diagrams for enterprise workflows.</p>
+        <!-- Coursework & Education -->
+        <section>
+            <h2>Education & Relevant Coursework</h2>
+            <div class="entry">
+                <div class="entry-header">
+                    <span class="entry-title">Bachelor of Science in Software Engineering</span>
+                    <span class="entry-date">In Progress</span>
                 </div>
-                <div class="item">
-                    <h3>Database Engineering & SQL Server</h3>
-                    <p>Built normalized Relational Database Schemas (ER/EER), writing optimized SQL queries and managing datasets in Microsoft SQL Server.</p>
-                </div>
-                <div class="item">
-                    <h3>Computer Networking & Infrastructure</h3>
-                    <p>Configured multi-router network topologies with OSPF routing, VLANs, and switch port security using Cisco Packet Tracer.</p>
-                </div>
-            </section>
+                <div class="entry-subtitle">Key Coursework:</div>
+                <ul>
+                    <li><strong>Software Engineering & UML Modeling:</strong> Complete system design lifecycle with behavioral and structural UML viewpoints.</li>
+                    <li><strong>Database Systems:</strong> Database normalization (1NF–3NF), ER diagramming, complex SQL joins, and script optimization.</li>
+                    <li><strong>Computer Networks:</strong> Routing protocols, subnetting, TCP/IP, and switch security configurations.</li>
+                </ul>
+            </div>
+        </section>
 
-            <section class="content-block">
-                <h2><i class="fas fa-project-diagram"></i> Highlighted Projects</h2>
-                <div class="item">
-                    <h3>Cloud Infrastructure & Version Control Assignment</h3>
-                    <p>Deployed static portfolio via GitHub Pages, managed large asset storage using Git LFS, and configured remote mirror repositories on Gitea.</p>
-                </div>
-                <div class="item">
-                    <h3>Desktop Shopping Management System</h3>
-                    <p>Developed a C# Windows Forms application integrated with relational database queries for inventory and order management.</p>
-                </div>
-            </section>
-
-            <footer>
-                <p>&copy; 2026 Faiqa Shahzad. Hosted on GitHub Pages.</p>
-            </footer>
-        </main>
+        <!-- Footer -->
+        <footer>
+            <p>&copy; 2026 Faiqa Shahzad | Portfolio hosted on GitHub Pages</p>
+        </footer>
     </div>
+
 </body>
 </html>
